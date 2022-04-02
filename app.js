@@ -5,11 +5,11 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const indexRouter = require('./src/routes/index');
-const authenticateRouter = require('./src/routes/authenticate');
-const createUserRouter = require("./src/routes/create_user");
-const activateEmailRouter = require("./src/routes/activate_email");
-const forgotPasswordRouter = require("./src/routes/forgot_password");
-const resetPasswordRouter = require("./src/routes/reset_password");
+const authenticateRouter = require('./src/routes/user/authenticate');
+const createUserRouter = require("./src/routes/user/create_user");
+const activateEmailRouter = require("./src/routes/user/activate_email");
+const forgotPasswordRouter = require("./src/routes/user/forgot_password");
+const resetPasswordRouter = require("./src/routes/user/reset_password");
 const postRouter = require("./src/routes/post")
 const app = express();
 

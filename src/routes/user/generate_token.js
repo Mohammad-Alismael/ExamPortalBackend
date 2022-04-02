@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-const { RefreshToken } = require('../models/refresh_tokens')
+const { RefreshToken } = require('../../models/refresh_tokens')
 /* GET users listing. */
 router.post('/token', async (req, res) => {
     const refreshToken = req.body.token;

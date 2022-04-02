@@ -3,7 +3,7 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const nodemailer = require("nodemailer");
-const { User } = require('../models/Users');
+const { User } = require('../../models/Users');
 const validator = require("email-validator");
 require("dotenv").config();
 

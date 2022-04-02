@@ -1,7 +1,7 @@
 const express = require('express');
 const jwt = require("jsonwebtoken");
 const router = express.Router();
-const { User } = require('../models/Users');
+const { User } = require('../../models/Users');
 require("dotenv").config();
 /* GET home page. */
 router.post('/activate', function(req, res, next) {

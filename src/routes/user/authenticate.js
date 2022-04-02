@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 require("dotenv").config();
-const { User } = require('../models/Users');
-const { RefreshToken } = require('../models/refresh_tokens');
+const { User } = require('../../models/Users');
+const { RefreshToken } = require('../../models/refresh_tokens');
  const bcrypt = require("bcrypt");
  let response = null;
 router.post('/auth', async function (req, res, next) {
