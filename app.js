@@ -10,6 +10,7 @@ const createUserRouter = require("./src/routes/user/create_user");
 const activateEmailRouter = require("./src/routes/user/activate_email");
 const forgotPasswordRouter = require("./src/routes/user/forgot_password");
 const resetPasswordRouter = require("./src/routes/user/reset_password");
+const createClassroomRouter = require("./src/routes/classroom/create_classrom");
 const postRouter = require("./src/routes/post")
 const app = express();
 
@@ -29,6 +30,7 @@ app.use('/user', createUserRouter);
 app.use('/user', activateEmailRouter);
 app.use('/user', forgotPasswordRouter);
 app.use('/user', resetPasswordRouter);
+app.use('/classroom',createClassroomRouter);
 app.use('/posts',postRouter);
 
 // catch 404 and forward to error handler

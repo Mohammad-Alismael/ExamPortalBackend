@@ -47,10 +47,7 @@ router.post('/create', async function (req, res, next) {
             }
             res.status(409).json(msg)
         }else {
-            // const userForJwt = {user_id,username,role_id}
-            // const accessToken = generateAccessToken(userForJwt)
             await sendEmail(user)
-            // res.json({...userForJwt, accessToken})
         }
     } catch(err) {
         console.log(err)
