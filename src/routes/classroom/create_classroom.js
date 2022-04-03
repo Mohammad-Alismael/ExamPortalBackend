@@ -12,7 +12,7 @@ router.post('/create',authorizeForInstructor,async function (req, res, next) {
             class_name
         }
     })
-    if (created){
+    if (!created){
         res.json({message: `you already have classroom named ${class_name}`});
     }else {
         res.json({message: `classroom created successfully!`});
