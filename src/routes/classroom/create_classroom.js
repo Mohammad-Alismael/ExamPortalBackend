@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const {authorizeForInstructor} = require('../../middleware/autherization');
+const {authorize} = require('../../middleware/autherization');
 const {Classroom} = require("../../models/Classroom");
 
-router.post('/create',authorizeForInstructor,async function (req, res, next) {
+router.post('/create',authorize,async function (req, res, next) {
     const {class_name} = req.body;
     const [classroom, created] = await Classroom.findOrCreate({
         where: {instructor_id : req.user_id, class_name },
