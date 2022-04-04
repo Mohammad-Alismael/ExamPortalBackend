@@ -23,7 +23,9 @@
     "sendmail": "^1.6.1",
     "sequelize": "^6.17.0",
     "sequelize-auto": "^0.8.8",
-    "speakeasy": "^2.0.0"
+    "speakeasy": "^2.0.0",
+    "swagger-jsdoc": "^6.2.0",
+    "swagger-ui-express": "^4.3.0"
   },
   "devDependencies": {
     "sequelize-cli": "^6.4.1"

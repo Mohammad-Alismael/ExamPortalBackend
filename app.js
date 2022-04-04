@@ -12,6 +12,7 @@ const forgotPasswordRouter = require("./src/routes/user/forgot_password");
 const resetPasswordRouter = require("./src/routes/user/reset_password");
 const createClassroomRouter = require("./src/routes/classroom/create_classroom");
 const fetchClassRoomRouter = require("./src/routes/classroom/fetch_classrooms");
+const enrollClassroomRouter = require("./src/routes/classroom/enroll_classroom");
 const postRouter = require("./src/routes/post")
 const app = express();
 
@@ -33,6 +34,7 @@ app.use('/user', forgotPasswordRouter);
 app.use('/user', resetPasswordRouter);
 app.use('/classroom',createClassroomRouter);
 app.use('/classroom',fetchClassRoomRouter);
+app.use('/classroom',enrollClassroomRouter);
 app.use('/posts',postRouter);
 
 // catch 404 and forward to error handler
